@@ -7,6 +7,7 @@ import Clock2 from "./toggletimer"
 import ColorPicker from './tasks';
 import PhoneNumber from './phoneNumber'
 import QuizNavBar from './QuizNavBar';
+import GroceryCart from "./GroceryCart"
 
 
 const questions = [
@@ -80,6 +81,8 @@ class Football extends React.Component {
         <PhoneNumber/>
         <br/>
         <QuizNavBar questions={questions}/>
+        <br/>
+        <GroceryCart/>
       </div>
     );
   }
