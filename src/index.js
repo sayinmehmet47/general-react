@@ -6,7 +6,16 @@ import Clock from './timer'
 import Clock2 from "./toggletimer"
 import ColorPicker from './tasks';
 import PhoneNumber from './phoneNumber'
+import QuizNavBar from './QuizNavBar';
 
+
+const questions = [
+  {"Question":"This is the first question","Answer":"This is the first Answer"},
+  {"Question":"This is the second question","Answer":"This is the second Answer"},
+  {"Question":"This is the third question","Answer":"This is the third Answer"},
+  {"Question":"This is the forth question","Answer":"This is the forth Answer"},
+  {"Question":"This is the fifth question","Answer":"This is the fifth Answer"},
+];
 class Car extends React.Component {
   render() {
     return (
@@ -69,6 +78,8 @@ class Football extends React.Component {
         <ColorPicker/>
         <br/>
         <PhoneNumber/>
+        <br/>
+        <QuizNavBar questions={questions}/>
       </div>
     );
   }
